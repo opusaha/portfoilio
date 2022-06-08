@@ -1,0 +1,61 @@
+.card{
+    height: 14rem;
+    width: 10rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .26);
+    border: 7px solid var(--orangeCard);
+    border-radius: 20px;
+    padding: 0px 25px 2px 25px;
+}
+.card :nth-child(1){
+    transform: scale(.9);
+}
+.card :nth-child(2){
+    color: orange;
+}
+.card :nth-child(3){
+    color: gray;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.card-button{
+    background: #fff;
+    box-shadow: 0px 19px 60px rgba(0, 0, 0, .08);
+    border-radius: 16px;
+    border: none;
+    padding: 10px 16px;
+    font-size: 16px;
+    color: blue;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.card-button:hover{
+    background: orange;
+    color: aliceblue;
+}
+@media screen and (max-width:425px){
+    .card{
+        height: 11rem;
+        width: 7.5rem;
+        gap: .2rem;
+        padding: 0px 5px 2px 5px;
+    }
+    .card :nth-child(1){
+        transform: scale(.6);
+    }
+    .card :nth-child(3){
+        color: gray;
+        font-size: 12px;
+    }
+    .card-button{
+        border-radius: 12px;
+        padding: 3px 7px;
+        font-size: 12px;
+        text-transform: capitalize;
+    }
+}

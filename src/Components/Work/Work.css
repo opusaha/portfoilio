@@ -1,0 +1,121 @@
+.work{
+    padding: 0 3rem;
+    display: flex;
+    height: 70vh;
+    margin-top: 4rem;
+}
+.w-right{
+    position: relative;
+}
+.main-circle{
+    left: 15rem;
+    position: relative;
+    width: 18rem;
+    height: 18rem;
+    border-radius: 100%;
+    box-shadow: var(--smboxShadow);
+    top: 2rem;
+    background: #fff;
+}
+.sec-circle>*{
+    position: absolute;
+}
+.sec-circle>:nth-child(1){
+    top: -3rem;
+    left: 6rem;
+}
+.sec-circle>:nth-child(2){
+    left: -3rem;
+    top: 5rem;
+}
+.sec-circle>:nth-child(3){
+    left: 6rem;
+    top: 5rem;
+}
+.sec-circle>:nth-child(4){
+    left: 15rem;
+    top: 5rem;
+}
+.sec-circle>:nth-child(5){
+    left: 6rem;
+    top: 13rem;
+}
+.w-circle{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+    border-radius: 100%;
+    border: 5px solid #ebebeb;
+    display: flex;
+    align-items: center;
+    background: none;
+    box-sizing: var(--smboxShadow);
+    background: #fff;
+}
+.w-circle>a>img{
+    transform: scale(.7);
+}
+.w-back-circle{
+    height: 13rem;
+    width: 13rem;
+    position: absolute;
+    border-radius: 100%;
+    z-index: -1;
+}
+.blue-circle{
+    background-color: #abf1ff94 ;
+    left: 25rem;
+    top: 0rem;
+}
+.yellow-circle{
+    background-color: #ffff00;
+    left: 25rem;
+    top: 5rem;
+}
+@media screen and (max-width:425px) {
+    .work{
+        padding: 0 1rem;
+        height: 100vh;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    .main-circle{
+        left: 1.5rem;
+        width: 13rem;
+        height: 13rem;
+        top: 4rem;
+        background: #fff;
+    }
+    .sec-circle>*{
+        transform: scale(.7);
+    }
+    .sec-circle>:nth-child(1){
+        top: -3rem;
+        left: 3.5rem;
+    }
+    .sec-circle>:nth-child(2){
+        left: -3rem;
+        top: 3rem;
+    }
+    .sec-circle>:nth-child(3){
+        left: 3.5rem;
+        top: 3rem;
+    }
+    .sec-circle>:nth-child(4){
+        left: 9.5rem;
+        top: 3rem;
+    }
+    .sec-circle>:nth-child(5){
+        left: 3.5rem;
+        top: 9rem;
+    }
+    .blue-circle{
+        left: 4rem;
+        top: 3rem;
+    }
+    .yellow-circle{
+        left: 4rem;
+        top: 5rem;
+        background-color: aquamarine;
+    }
+}

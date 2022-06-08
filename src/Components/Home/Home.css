@@ -1,0 +1,153 @@
+.home{
+    display: flex;
+    height: 75vh;
+    margin-top: 6rem;
+    padding: 3rem;
+}
+.h-left{
+    display: flex;
+    position: relative;
+    flex: 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+.h-name{
+    display: flex;
+    flex-direction: column;
+}
+.h-name>:nth-child(1){
+    color: var(--black);
+    font-weight: 700;
+    font-size: 3rem;
+}
+.h-name>:nth-child(2){
+    color: orange;
+    font-weight: 700;
+    font-size: 3rem;
+}
+.h-name>:nth-child(3){
+    color: gray;
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.h-button{
+    width: 6rem;
+    height: 2rem;
+}
+.h-right{
+    flex: 1;
+}
+.h-icons{
+    margin-top: 3rem;
+    display: flex;
+    gap: 0;
+}
+.h-icons>*{
+    transform:  scale(.5);
+}
+.h-icons>*:hover{
+    cursor: pointer;
+}
+
+.h-right{
+    flex: 1;
+    position: relative;
+}
+.h-right>*{
+    position: absolute;
+    z-index: 1;
+}
+.h-right>:nth-child(1){
+    transform: scale(1.5);
+    left: 15%;
+    top: 4%;
+}
+.h-right>:nth-child(2){
+    transform: scale(1.4);
+    left: 12%;
+    top: 0%;
+}
+.h-right>:nth-child(3){
+    transform: scale(.8);
+    right: 31%;
+    bottom : 29%;
+}
+.h-right>:nth-child(4){
+    transform: scale(.6);
+    left: -15%;
+    top: -15%;
+    border-radius: 50%;
+    
+}
+.h-right>:nth-child(5){
+    transform: scale(.85);
+    right: 10%;
+    top :-15%;
+    box-shadow: #edd0ff 10px 25px 90px ;
+    border-radius: 10%;
+}
+.h-right>:nth-child(6){
+    transform: scale(.85);
+    left: 15%;
+    bottom :20%;
+    box-shadow: #afddee 10px 25px 90px ;
+    border-radius: 10%;
+}
+.blur{
+    position: absolute;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: #edd0ff;
+    filter: blur(72px);
+    z-index: -9;
+    top: -18%;
+    left: 56%;
+}
+@media screen and (max-width:425px){
+    .home{
+        padding: 0px 1rem;
+        flex-direction: column;
+        height: 110vh;
+    }
+    .h-name>:nth-child(1){
+        font-size: 1.5rem;
+    }
+    .h-name>:nth-child(2){
+        font-size: 2rem;
+    }
+    .h-icons{
+        margin-top: 0rem;
+    }
+    .h-right>:nth-child(1){
+        transform: scale(.9);
+        left: -30%;
+        top: -25%;
+    }
+    .h-right>:nth-child(2){
+        transform: scale(.85);
+        left: -30%;
+        top: -25%;
+    }
+    .h-right>:nth-child(3){
+        transform: scale(.49);
+        left: -15%;
+        bottom :1%;
+    }
+    .h-right>:nth-child(4){
+        transform: scale(.45);
+        left: -15%;
+        top: -25%;
+    }
+    .h-right>:nth-child(5){
+        transform: scale(.60);
+        right: -15%;
+        top: 60%;
+    }
+    .h-right>:nth-child(6){
+        transform: scale(.70);
+        top: -10%;
+        left: 35%;
+    }
+}
