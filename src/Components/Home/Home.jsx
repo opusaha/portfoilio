@@ -49,7 +49,7 @@ const Home = () => {
                     <FloatingDiv image={Crown} text1='Web' text2='Developer' />
                 </motion.div>
                 <motion.div
-                initial={{left:'3%', top:'-10'}}
+                initial={{left:'3%', top:'10'}}
                 whileInView={{ top:'61%' , left:'18%'}}
                 transition={transition}
                 >

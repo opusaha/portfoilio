@@ -49,7 +49,6 @@
 .h-icons>*:hover{
     cursor: pointer;
 }
-
 .h-right{
     flex: 1;
     position: relative;
@@ -109,7 +108,11 @@
     .home{
         padding: 0px 1rem;
         flex-direction: column;
-        height: 110vh;
+        height: 75vh;
+        margin-top: .8rem;
+    }
+    .h-left{
+        gap: .8rem;
     }
     .h-name>:nth-child(1){
         font-size: 1.5rem;
@@ -118,22 +121,25 @@
         font-size: 2rem;
     }
     .h-icons{
-        margin-top: 0rem;
+        margin-top: 0px;
+    }
+    .h-icons>*{
+        transform: scale(.45);
     }
     .h-right>:nth-child(1){
         transform: scale(.9);
-        left: -30%;
-        top: -25%;
+        left: -20%;
+        top: -40%;
     }
     .h-right>:nth-child(2){
         transform: scale(.85);
-        left: -30%;
-        top: -25%;
+        left: -20%;
+        top: -40%;
     }
     .h-right>:nth-child(3){
-        transform: scale(.49);
-        left: -15%;
-        bottom :1%;
+        transform: scale(.45);
+        left: -8%;
+        bottom :-20%;
     }
     .h-right>:nth-child(4){
         transform: scale(.45);

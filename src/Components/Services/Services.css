@@ -36,12 +36,15 @@
 .s-right>*{
     position: absolute;
 }
+.s-right> span, .s-right>button{
+    display: none;
+} 
 .card1{
     left: 20rem;
 }
 .card2{
     top: 11rem;
-    left: 4rem;
+    left: 6rem;
 }
 .card3{
     top: 19rem;
@@ -58,21 +61,24 @@
 @media screen and (max-width:425px){
     .services{
         flex-direction: column;
-        height: 105vh;
+        height: 100vh;
         gap: 2rem;
         padding: 0px 1rem;
     }
     .s-left>:nth-child(1){
+        font-size: 1rem;
+    }
+    .s-left>:nth-child(2){
         font-size: 1.5rem;
     }
     .card1{
-        left: 8.5rem;
+        left: 9.5rem;
     }
     .card2{
         top: 11rem;
-        left: -1rem;
+        left: -.5rem;
     }
     .card3{
-        left: 8.5rem;
+        left: 9.5rem;
     }
 }

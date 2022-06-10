@@ -8,7 +8,7 @@ import Shopify from '../../img/Shopify.png'
 import { motion } from 'framer-motion'
 
 const Work = () => {
-    const transition = { duration: 4, type: 'spring' };
+    const transition = { duration: 2, type: 'spring' };
     return (
         <div className='work'>
             <div className="s-left">

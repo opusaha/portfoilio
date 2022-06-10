@@ -49,7 +49,22 @@
     cursor: pointer;
 }
 @media screen and (max-width:480px){
-  .n-list,.n-button{
+    .n-wrapper {
+        float: left;
+        width: 90%;
+        height: 5vh;
+        position: relative;
+    }
+    .n-left{
+        position: absolute;
+        top: -9vh;
+        left: 24vh;
+    }
+    .n-list,.n-button{
       display: none;
-  }
+    }
+    .logo{
+        transform: scale(.2);
+        cursor: pointer;
+    }
 }

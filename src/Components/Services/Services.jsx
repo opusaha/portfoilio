@@ -7,7 +7,7 @@ import Card from '../Card/Card';
 import{motion} from 'framer-motion'
 
 const Services = () => {
-    const transition = {duration :4, type : 'spring'}
+    const transition = {duration :3, type : 'spring'}
     return (
         <div className='services' id='Services'>
             <div className="s-left">
@@ -25,22 +25,22 @@ const Services = () => {
             </div>
             <div className="s-right">
                 <motion.div className="card1"
-                initial={{rightz:'0%'}}
-                whileInView={{ right:'-58%', top:'45%'}}
+                initial={{top:'0vh'}}
+                whileInView={{top:'30vh'}}
                 transition={transition}
                 >
                 <Card emoji ={HeartEmoji} headings ={'Design'} detail={'figma, PSD, phptoshop, XD'}/>
                 </motion.div>
                 <motion.div className="card2" 
-                initial={{top:'40%'}}
-                whileInView={{ top:'20%'}}
+                initial={{top:'40vh'}}
+                whileInView={{ top:'18vh'}}
                 transition={transition}
                 >
                 <Card emoji ={GlassEmoji} headings ={'FontEnd'} detail={'HTML, CSS, Javascript, React'}/>
                 </motion.div>
                 <motion.div className="card3"
-                 initial={{right:'0%'}}
-                 whileInView={{ right:'-58%', top:'2%'}}
+                 initial={{top:"40vh"}}
+                 whileInView={{top:'-3vh'}}
                  transition={transition}
                 >
                 <Card emoji ={Humble} headings ={'BackEnd'} detail={'PHP, laravel'}/>
