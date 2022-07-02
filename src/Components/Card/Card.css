@@ -38,7 +38,39 @@
     background: orange;
     color: aliceblue;
 }
-@media screen and (max-width:425px){
+@media  (max-width: 320px) {
+    .card{
+        height: 11rem;
+        width: 6rem;
+        gap: .2rem;
+        padding: 0px 5px 2px 5px;
+    }
+    .card :nth-child(1){
+        transform: scale(.4);
+        position: absolute;
+        top: -15px;
+    }
+    .card :nth-child(2){
+        position: absolute;
+        top: 90px;
+    }
+    .card :nth-child(3){
+        color: gray;
+        font-size: 12px;
+        position: absolute;
+        bottom: 60px;
+    }
+    .card-button{
+        border-radius: 12px;
+        padding: 3px 7px;
+        font-size: 12px;
+        text-transform: capitalize;
+        position: absolute;
+        bottom: 10px;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
     .card{
         height: 11rem;
         width: 7.5rem;

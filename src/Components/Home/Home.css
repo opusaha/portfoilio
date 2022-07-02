@@ -104,7 +104,114 @@
     top: -18%;
     left: 56%;
 }
-@media screen and (max-width:425px){
+@media  (max-width: 320px) {
+    .home{
+        padding: 0px .1rem;
+        flex-direction: column;
+        height: 75vh;
+        margin-top: .8rem;
+    }
+    .h-left{
+        gap: .5rem;
+    }
+    .h-name>:nth-child(1){
+        font-size: 1.5rem;
+    }
+    .h-name>:nth-child(2){
+        font-size: 2rem;
+    }
+    .h-icons{
+        margin-top: 0px;
+    }
+    .h-icons>*{
+        transform: scale(.45);
+    }
+    .h-right>:nth-child(1){
+        transform: scale(.8);
+        left: -30%;
+        top: -48%;
+    }
+    .h-right>:nth-child(2){
+        transform: scale(.75);
+        left: -30%;
+        top: -48%;
+    }
+    .h-right>:nth-child(3){
+        transform: scale(.4);
+        left: -20%;
+        bottom :-22%;
+    }
+    .h-right>:nth-child(4){
+        transform: scale(.35);
+        left: -15%;
+        top: -25%;
+    }
+    .h-right>:nth-child(5){
+        transform: scale(.55);
+        right: -15%;
+        top: 50%;
+        position: absolute;
+    }
+    .h-right>:nth-child(6){
+        transform: scale(.60);
+        top: -10%;
+        left: 35%;
+    }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+    .home{
+        padding: 0px .5rem;
+        flex-direction: column;
+        height: 75vh;
+        margin-top: .8rem;
+    }
+    .h-left{
+        gap: .5rem;
+    }
+    .h-name>:nth-child(1){
+        font-size: 1.5rem;
+    }
+    .h-name>:nth-child(2){
+        font-size: 2rem;
+    }
+    .h-icons{
+        margin-top: 0px;
+    }
+    .h-icons>*{
+        transform: scale(.45);
+    }
+    .h-right>:nth-child(1){
+        transform: scale(.9);
+        left: -20%;
+        top: -40%;
+    }
+    .h-right>:nth-child(2){
+        transform: scale(.85);
+        left: -20%;
+        top: -40%;
+    }
+    .h-right>:nth-child(3){
+        transform: scale(.45);
+        left: -8%;
+        bottom :-22%;
+    }
+    .h-right>:nth-child(4){
+        transform: scale(.45);
+        left: -15%;
+        top: -25%;
+    }
+    .h-right>:nth-child(5){
+        transform: scale(.60);
+        right: -15%;
+        top: 60%;
+    }
+    .h-right>:nth-child(6){
+        transform: scale(.70);
+        top: -10%;
+        left: 35%;
+    }
+}
+@media (min-width: 376px) and (max-width: 425px) {
     .home{
         padding: 0px 1rem;
         flex-direction: column;
@@ -112,7 +219,7 @@
         margin-top: .8rem;
     }
     .h-left{
-        gap: .8rem;
+        gap: .5rem;
     }
     .h-name>:nth-child(1){
         font-size: 1.5rem;

@@ -58,7 +58,57 @@
     left: 14rem;
     top: 8rem;
 }
-@media screen and (max-width:425px){
+@media  (max-width: 320px) {
+    .services{
+        flex-direction: column;
+        height: 100vh;
+        gap: 2rem;
+        padding: 0px 1rem;
+    }
+    .s-left>:nth-child(1){
+        font-size: 1rem;
+    }
+    .s-left>:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .card1{
+        left: 6.5rem;
+    }
+    .card2{
+        top: 11rem;
+        left: -1rem;
+    }
+    .card3{
+        left: 6.5rem;
+    }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+    .services{
+        flex-direction: column;
+        height: 100vh;
+        gap: 2rem;
+        padding: 0px 1rem;
+    }
+    .s-left>:nth-child(1){
+        font-size: 1rem;
+    }
+    .s-left>:nth-child(2){
+        font-size: 1.5rem;
+    }
+    .card1{
+        left: 8rem;
+    }
+    .card2{
+        top: 11rem;
+        left: -1rem;
+    }
+    .card3{
+        left: 8rem;
+    }
+}
+
+
+@media (min-width: 376px) and (max-width: 425px) {
     .services{
         flex-direction: column;
         height: 100vh;

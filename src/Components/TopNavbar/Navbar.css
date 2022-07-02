@@ -1,0 +1,112 @@
+.n-wrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+.n-left{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+}
+.logo{
+    transform: scale(.35);
+}
+.n-right{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+}
+.n-list{
+    flex: 10;
+}
+.n-list>ul{
+    display: flex;
+    gap: 2rem;
+    margin-right: 4rem;
+    list-style: none;
+    cursor: pointer;
+}
+.n-li:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+.n-li:active{
+    color: red;
+}
+.n-button{
+    flex: 2;
+}
+.login{
+    margin-left: 6px;
+}
+.button:hover{
+    color: orange;
+    border:1px double orange;
+    background: whitesmoke;
+    cursor: pointer;
+}
+
+@media (max-width: 320px) {
+    .n-wrapper {
+        float: left;
+        width: 90%;
+        height: 5vh;
+        position: relative;
+    }
+    .n-left{
+        position: absolute;
+        top: -9vh;
+        left: 35vw;
+    }
+    .n-list,.n-button{
+      display: none;
+    }
+    .logo{
+        transform: scale(.2);
+        cursor: pointer;
+    }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+    .n-wrapper {
+        float: left;
+        width: 90%;
+        height: 5vh;
+        position: relative;
+    }
+    .n-left{
+        position: absolute;
+        top: -9vh;
+        left: 41vw;
+    }
+    .n-list,.n-button{
+      display: none;
+    }
+    .logo{
+        transform: scale(.2);
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    .n-wrapper {
+        float: left;
+        width: 90%;
+        height: 5vh;
+        position: relative;
+    }
+    .n-left{
+        position: absolute;
+        top: -9vh;
+        left: 45vw;
+    }
+    .n-list,.n-button{
+      display: none;
+    }
+    .logo{
+        transform: scale(.2);
+        cursor: pointer;
+    }
+}
