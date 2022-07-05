@@ -10,8 +10,8 @@ import { motion } from 'framer-motion'
 const Work = () => {
     const transition = { duration: 2, type: 'spring' };
     return (
-        <div className='work'>
-            <div className="s-left">
+        <div className='work row'>
+            <div className="w-s-left col-lg-6">
                 <span>Work for All these</span>
                 <span>Brands and Clients</span>
                 <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti accusantium suscipit mollitia,
@@ -26,7 +26,7 @@ const Work = () => {
                 <div className="blur" style={{ background: '#abf1ff94' }}></div>
             </div>
 
-            <div className="w-right">
+            <div className="w-right col-lg-6">
                 <motion.div
                     initial={{ rotate: 60 }}
                     whileInView={{ rotate: 0 }}

@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 50vh;
     margin-bottom: 100px;
 }
 .portfolio :nth-child(1){
@@ -33,7 +32,6 @@
 }
 @media screen and (max-width:425px){
     .portfolio{
-        height: 35vh;
         margin-bottom: 50px;
     }
     .portfolio :nth-child(1){

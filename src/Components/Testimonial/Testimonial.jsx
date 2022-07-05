@@ -39,7 +39,7 @@ const Testimonial = () => {
         }
     ]
     return (
-        <div className='t-wrapper'>
+        <div className='t-wrapper' id='testimonial'>
             <div className="t-heading">
                 <span>Clients always get </span>
                 <span>Expectional Work </span>

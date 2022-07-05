@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const Experience = () => {
     const transition = { duration: 2, type: 'spring' };
     return (
-        <div className='experience' id='Experience'>
+        <div className='experience' id='experience'>
             <div className="achievement">
                 <motion.div
                 initial={{ rotate: 180 }}

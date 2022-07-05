@@ -3,8 +3,9 @@
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    height: 30vh;
-    margin-bottom: 8rem;
+    height: 10vh;
+    margin-bottom: 2rem;
+    padding-top: 10vh;
 }
 
 .achievement {
@@ -50,11 +51,8 @@
     font-size: 1.2rem;
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:576px) {
     .experience {
-        margin-top: 2rem;
         gap: 1rem;
-        margin-bottom: 2rem;
     }
-
 }

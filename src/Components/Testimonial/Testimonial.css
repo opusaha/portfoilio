@@ -33,8 +33,8 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 2rem ;
-    width: 30rem;
-    height: 12rem;
+    width: 45rem;
+    height: 20rem;
     background: rgb(255, 255, 255, .26);
     border: 7px solid var(--blueCard);
     box-shadow: var(--boxShadow);
@@ -63,7 +63,7 @@
 
 @media screen and (max-width:425px){
     .t-wrapper{
-        padding: 0 1rem;
+        padding: 0rem;
         gap: 2rem;
         justify-content:start;
         align-items: center;
@@ -72,9 +72,9 @@
         font-size: 1.2rem;
     }
     .Testimonial{
-        padding: .2rem ;
+        padding: 1.5rem 0 ;
         width: 100%;
-        height: 12rem;
+        height: fit-content;
         border: 5px solid var(--blueCard);
     }
     .Testimonial>img{

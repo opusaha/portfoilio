@@ -1,19 +1,16 @@
 .home{
-    display: flex;
-    height: 75vh;
-    margin-top: 6rem;
-    padding: 3rem;
+    height: 95vh;
 }
-.h-left{
-    display: flex;
-    position: relative;
-    flex: 1;
-    flex-direction: column;
-    gap: 2rem;
+.h-row{
+    margin-top: 14vh;
+    margin-right: 6vw;
+    margin-bottom: 15vh;
+    margin-left: 6vw;
 }
 .h-name{
     display: flex;
     flex-direction: column;
+    margin-top: 6vh;
 }
 .h-name>:nth-child(1){
     color: var(--black);
@@ -27,16 +24,11 @@
 }
 .h-name>:nth-child(3){
     color: gray;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 14px;
-    margin-top: 10px;
 }
-.h-button{
-    width: 6rem;
-    height: 2rem;
-}
-.h-right{
-    flex: 1;
+.h-btn{
+    width: 12rem;
 }
 .h-icons{
     margin-top: 3rem;
@@ -46,221 +38,205 @@
 .h-icons>*{
     transform:  scale(.5);
 }
-.h-icons>*:hover{
-    cursor: pointer;
-}
-.h-right{
-    flex: 1;
+.h-img{
     position: relative;
 }
-.h-right>*{
+.h-img>:nth-child(1){
+    transform: scale(1);
+}
+.h-img>:nth-child(2){
     position: absolute;
-    z-index: 1;
+    left: 2vw;
+    transform: scale(.9);
 }
-.h-right>:nth-child(1){
-    transform: scale(1.5);
-    left: 15%;
-    top: 4%;
-}
-.h-right>:nth-child(2){
-    transform: scale(1.4);
-    left: 12%;
-    top: 0%;
-}
-.h-right>:nth-child(3){
-    transform: scale(.8);
-    right: 31%;
-    bottom : 29%;
-}
-.h-right>:nth-child(4){
-    transform: scale(.6);
-    left: -15%;
-    top: -15%;
-    border-radius: 50%;
-    
-}
-.h-right>:nth-child(5){
-    transform: scale(.85);
-    right: 10%;
-    top :-15%;
-    box-shadow: #edd0ff 10px 25px 90px ;
-    border-radius: 10%;
-}
-.h-right>:nth-child(6){
-    transform: scale(.85);
-    left: 15%;
-    bottom :20%;
-    box-shadow: #afddee 10px 25px 90px ;
-    border-radius: 10%;
-}
-.blur{
+.h-img>:nth-child(3){
     position: absolute;
-    width: 22rem;
-    height: 14rem;
-    border-radius: 50%;
-    background: #edd0ff;
-    filter: blur(72px);
-    z-index: -9;
-    top: -18%;
-    left: 56%;
+    top: 0px;
+    left: 0%;
+    transform: scale(.5);
 }
-@media  (max-width: 320px) {
+.floating-div-1{
+    position: absolute;
+    top: 0px;
+    right: 0vw;
+}
+.floating-div-2{
+    position: absolute;
+    top:0%;
+}
+@media  (max-width: 375px) {
     .home{
-        padding: 0px .1rem;
-        flex-direction: column;
-        height: 75vh;
-        margin-top: .8rem;
+        height: 120vh;
     }
-    .h-left{
-        gap: .5rem;
+    .h-row{
+        margin-top: 1vh;
+        margin-right: 1vw;
+        margin-bottom: 5vh;
+        margin-left: 1vw;
+    }
+    .h-name{
+        margin-top: 1vh;
+    }
+    .h-img>*:nth-child(3){
+    transform: scale(.35);
+    top: -20%;
+    left: -45%;
+    }
+.floating-div-1{
+    right: -16%;
+    }
+}
+@media  (min-width: 376px) and (max-width: 576px) {
+    .home{
+        height: 120vh;
+    }
+    .h-row{
+        margin-top: 1vh;
+        margin-right: 1vw;
+        margin-bottom: 5vh;
+        margin-left: 1vw;
+    }
+    .h-name{
+        margin-top: 1vh;
     }
     .h-name>:nth-child(1){
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     .h-name>:nth-child(2){
-        font-size: 2rem;
+        font-size: 2.5rem;
+    }
+    .h-name>:nth-child(3){
+        margin-top: 10px;
+    }
+    .h-btn{
+        width: 8rem;
     }
     .h-icons{
-        margin-top: 0px;
+        margin-top: 1rem;
     }
     .h-icons>*{
-        transform: scale(.45);
+        transform:  scale(.6);
     }
-    .h-right>:nth-child(1){
-        transform: scale(.8);
-        left: -30%;
-        top: -48%;
-    }
-    .h-right>:nth-child(2){
-        transform: scale(.75);
-        left: -30%;
-        top: -48%;
-    }
-    .h-right>:nth-child(3){
-        transform: scale(.4);
+    .h-img>*:nth-child(3){
+        transform: scale(.44);
+        top: 0%;
         left: -20%;
-        bottom :-22%;
     }
-    .h-right>:nth-child(4){
-        transform: scale(.35);
-        left: -15%;
-        top: -25%;
+
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    .home{
+        height: 140vh;
     }
-    .h-right>:nth-child(5){
+    .h-row{
+        margin-top: 1vh;
+        margin-right: 1vw;
+        margin-bottom: 5vh;
+        margin-left: 1vw;
+    }
+    .h-name{
+        margin-top: 1vh;
+    }
+    .h-name>:nth-child(1){
+        font-size: 3rem;
+    }
+    .h-name>:nth-child(2){
+        font-size: 3rem;
+    }
+    .h-name>:nth-child(3){
+        margin-top: 10px;
+    }
+    .h-btn{
+        width: 9rem;
+    }
+    .h-icons{
+        margin-top: 1rem;
+    }
+    .h-icons>*{
+        transform:  scale(.7);
+    }
+    .h-img>*:nth-child(3){
         transform: scale(.55);
-        right: -15%;
-        top: 50%;
-        position: absolute;
-    }
-    .h-right>:nth-child(6){
-        transform: scale(.60);
-        top: -10%;
-        left: 35%;
+        top: 0%;
+        left: -15%;
     }
 }
-@media (min-width: 321px) and (max-width: 375px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .home{
-        padding: 0px .5rem;
-        flex-direction: column;
-        height: 75vh;
-        margin-top: .8rem;
+        height: 90vh;
     }
-    .h-left{
-        gap: .5rem;
+    .h-row{
+        margin-top: 1vh;
+        margin-right: 1vw;
+        margin-bottom: 5vh;
+        margin-left: 1vw;
+    }
+    .h-name{
+        margin-top: 5vh;
     }
     .h-name>:nth-child(1){
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
     .h-name>:nth-child(2){
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    .h-name>:nth-child(3){
+        margin-top: 10px;
+    }
+    .h-btn{
+        width: 9rem;
     }
     .h-icons{
-        margin-top: 0px;
+        margin-top: 5rem;
     }
     .h-icons>*{
-        transform: scale(.45);
+        transform:  scale(.7);
     }
-    .h-right>:nth-child(1){
-        transform: scale(.9);
-        left: -20%;
-        top: -40%;
+    .h-img{
+        margin-top: 13vh;
     }
-    .h-right>:nth-child(2){
-        transform: scale(.85);
-        left: -20%;
-        top: -40%;
-    }
-    .h-right>:nth-child(3){
-        transform: scale(.45);
-        left: -8%;
-        bottom :-22%;
-    }
-    .h-right>:nth-child(4){
-        transform: scale(.45);
-        left: -15%;
-        top: -25%;
-    }
-    .h-right>:nth-child(5){
-        transform: scale(.60);
-        right: -15%;
-        top: 60%;
-    }
-    .h-right>:nth-child(6){
-        transform: scale(.70);
+    .h-img>*:nth-child(3){
+        transform: scale(.4);
         top: -10%;
-        left: 35%;
+    }
+    .floating-div-1{
+        width: 140px;
+        right: -12%;
     }
 }
-@media (min-width: 376px) and (max-width: 425px) {
-    .home{
-        padding: 0px 1rem;
-        flex-direction: column;
-        height: 75vh;
-        margin-top: .8rem;
+@media (min-width: 992px) and (max-width: 1200px) {
+    .h-row{
+        margin-top: 1vh;
+        margin-right: 1vw;
+        margin-bottom: 5vh;
+        margin-left: 1vw;
     }
-    .h-left{
-        gap: .5rem;
+    .h-name{
+        margin-top: 8vh;
     }
     .h-name>:nth-child(1){
-        font-size: 1.5rem;
+        font-size: 3rem;
     }
     .h-name>:nth-child(2){
-        font-size: 2rem;
+        font-size: 3rem;
+    }
+    .h-name>:nth-child(3){
+        margin-top: 10px;
+    }
+    .h-btn{
+        width: 9rem;
     }
     .h-icons{
-        margin-top: 0px;
+        margin-top: 1rem;
     }
     .h-icons>*{
-        transform: scale(.45);
+        transform:  scale(.7);
     }
-    .h-right>:nth-child(1){
-        transform: scale(.9);
-        left: -20%;
-        top: -40%;
+    .h-img{
+        margin-top: 13vh;
     }
-    .h-right>:nth-child(2){
-        transform: scale(.85);
-        left: -20%;
-        top: -40%;
-    }
-    .h-right>:nth-child(3){
-        transform: scale(.45);
-        left: -8%;
-        bottom :-20%;
-    }
-    .h-right>:nth-child(4){
-        transform: scale(.45);
-        left: -15%;
-        top: -25%;
-    }
-    .h-right>:nth-child(5){
-        transform: scale(.60);
-        right: -15%;
-        top: 60%;
-    }
-    .h-right>:nth-child(6){
-        transform: scale(.70);
+    .h-img>*:nth-child(3){
+        transform: scale(.4);
         top: -10%;
-        left: 35%;
     }
 }

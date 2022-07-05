@@ -9,7 +9,7 @@ import 'swiper/css';
 
 const Portfolio = () => {
     return (
-        <div className='portfolio' id='Portfolio'>
+        <div className='portfolio' id='portfolio'>
             <span>My Recent</span>
             <span>Project</span>
                 {/* slider */}
