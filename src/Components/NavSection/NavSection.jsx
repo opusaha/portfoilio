@@ -8,7 +8,7 @@ const NavSection = () => {
     return (
         <div className='NavSection'>
             <Navbar bg="transparent" expand="lg">
-                <Navbar.Brand href="#home">Welcome</Navbar.Brand>
+                <Navbar.Brand href="#home" className='welcome' >Welcome</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className='col-xl-9 col-md-8'>
                     <Nav className="m-auto ">
@@ -23,7 +23,6 @@ const NavSection = () => {
                 <Navbar.Collapse id="basic-navbar-nav" >
                     <Nav>
                         <div>
-                            <button className='button register'>Register</button>
                             <button className='button'>Login</button>
                         </div>
                     </Nav>

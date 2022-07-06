@@ -5,7 +5,7 @@
     gap: 5rem;
     height: 10vh;
     margin-bottom: 2rem;
-    padding-top: 10vh;
+    padding-top: 14vh;
 }
 
 .achievement {
@@ -42,7 +42,7 @@
 }
 
 .achievement>:nth-child(1) {
-    color: var(--black);
+    color: var(--orange);
     font-size: 1.2rem;
 }
 

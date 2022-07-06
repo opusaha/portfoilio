@@ -13,3 +13,23 @@
 .register{
     margin-right: 1rem;
 }
+.navbar-light .navbar-brand {
+    color: var(--black);
+}
+@media  (max-width: 991px) {
+    .welcome{
+        position: relative;
+        left: 40%;
+    }
+}
+@media  (min-width: 992px) and (max-width: 1199px) {
+    .welcome{
+        display: none;
+    }
+}
+@media  (min-width: 1200px) {
+    .welcome{
+        position: relative;
+        left: 8%;
+    }
+}

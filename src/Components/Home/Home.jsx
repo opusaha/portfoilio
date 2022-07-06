@@ -35,13 +35,13 @@ const Home = () => {
                     <div className='col-xl-12 h-img'>
                         <img src={Victor2} alt="" className='img-fluid' />
                         <img src={Boy} alt="" className='img-fluid' />
-                        <motion.div initial={{ left:'0' }} whileInView={{ left:'-10vw' }} transition={transition}>
+                        <motion.div initial={{ left:'0' }} whileInView={{ left:'-17%' }} transition={transition}>
                             <img src={GlassEmoji} alt="" />
                         </motion.div>
-                        <motion.div initial={{ left:'0' }} whileInView={{ left:'70%', top:'10vh' }} transition={transition} className='floating-div-1 col-md-4'>
+                        <motion.div initial={{ left:'0' }} whileInView={{ left:'70%', top:'10%' }} transition={transition} className='floating-div-1 col-md-4'>
                             <FloatingDiv image={Crown} text1={'Web'} text2={'Developer'} ></FloatingDiv>
                         </motion.div>
-                        <motion.div initial={{ left:'0' }} whileInView={{ left:'-1vw', top:'60vh' }} transition={transition} className='floating-div-2 col-md-4 col-offset-md-4'>
+                        <motion.div initial={{ left:'0' }} whileInView={{ left:'-1%', top:'60%' }} transition={transition} className='floating-div-2 col-md-4 col-offset-md-4'>
                             <FloatingDiv image={Thumbup} text1={'Best Developer'} text2={'Award'}></FloatingDiv>
                         </motion.div>
                     </div>

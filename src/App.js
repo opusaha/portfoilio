@@ -1,3 +1,5 @@
+import { createContext,useState } from 'react';
+import ReactSwitch from 'react-switch';
 import './App.css';
 import Contact from './Components/Contact/Contact';
 import Experience from './Components/Experience/Experience';
@@ -8,10 +10,21 @@ import Portfolio from './Components/Portfolio/Portfolio';
 import Services from './Components/Service/Services';
 import Testimonial from './Components/Testimonial/Testimonial';
 import Work from './Components/Work/Work';
+
+export const ThemeContext = createContext (null);
 function App() {
+  const [theme, setTheme] = useState("dark");
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  };
   return (
-    <div className="App">
+    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <div className="App" id={theme}>
       <NavSection />
+      <div className="switch">
+          <label> {theme === "light" ? "☼" : "🌙"}</label>
+          <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+        </div>
       <Home />
       <Services />
       <Experience />
@@ -21,6 +34,7 @@ function App() {
       <Contact />
       <Footer />
     </div>
+    </ThemeContext.Provider>
   );
 }
 

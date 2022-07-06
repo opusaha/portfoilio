@@ -32,7 +32,7 @@
     .footer>:nth-child(1){
         font-size: 20px;
         bottom: 40px;
-        left: 35%;
+        left: 32%;
     }
     .f-icon>:nth-child(1){
         left: 40%;
@@ -49,7 +49,7 @@
     .footer>:nth-child(1){
         font-size: 20px;
         bottom: 40px;
-        left: 35%;
+        left: 36.5%;
     }
     .f-icon>:nth-child(1){
         left: 40%;
@@ -65,7 +65,7 @@
     .footer>:nth-child(1){
         font-size: 20px;
         bottom: 40px;
-        left: 38%;
+        left: 40%;
     }
     .f-icon>:nth-child(1){
         left: 40%;
@@ -81,7 +81,7 @@
     .footer>:nth-child(1){
         font-size: 20px;
         bottom: 40px;
-        left: 40%;
+        left: 42%;
     }
     .f-icon>:nth-child(1){
         left: 40%;
@@ -93,11 +93,11 @@
         left: 60%;
     }
 }
-@media (min-width: 993px) and (max-width: 1200px) {
+@media (min-width: 993px) {
     .footer>:nth-child(1){
         font-size: 20px;
         bottom: 40px;
-        left: 42.5%;
+        left: 44.7%;
     }
     .f-icon>:nth-child(1){
         left: 40%;

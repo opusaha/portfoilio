@@ -100,7 +100,7 @@
 }
 @media (max-width: 375px) {
     .work{
-        padding: 0rem;
+        padding: 3rem 0;
         margin: 8vh 0vw;
     }
     .w-s-left>:nth-child(1){
